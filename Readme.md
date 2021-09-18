@@ -18,7 +18,7 @@
 
 - :package: [My Igniter](https://github.com/agoenks29D/My-Igniter)
 
-- :package: [Codeigniter 3 Template Engine](https://github.com/agoenks29D/Codeigniter-Template-Engine)
+- :package: [Codeigniter 3 Template Engine](https://github.com/agoenks29D/Codeigniter-3-Template-Engine)
 
 - :package: [Angeli](https://github.com/MedanSoftware/angeli)
 
