@@ -6,6 +6,6 @@
 
 ### Contact
 
-:call_me_hand: [Whatsapp | +62 896-1694-0698](https://bit.ly/agoenks29D-github-to-whatsapp)
+:call_me_hand: [Whatsapp | (+62) 838-4688-1360](https://wa.me/6283846881360)
 
 :raised_hand_with_fingers_splayed: Hire me from [**agungmasda29@gmail.com**](mailto:agungmasda29@gmail.com) `OR` [(Linkedin - agoenks29D)](agoenks29D-github-to-linkedin)
