@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1977" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2016" class="">
     <defs>
         <style/>
     </defs>
@@ -2148,7 +2148,7 @@
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
                             <span class="code">8d008931</span>
-                            <span class="code">public/assets/Fancyapps/panzoom/l10n/en.esm.js</span>
+                            <span class="code">public/assets/Fancyapps/panzoom/l10n/lv.esm.js</span>
                             <span class="code">
                                 <span class="snippet additions">++1</span>
                                 <span class="snippet deletions">--0</span>
@@ -2159,14 +2159,14 @@
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -0,0 +1 @@</span><br /><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">const o={PANUP:"Move up",PANDOWN:"Move down",PANLEFT:"Move left",PANRIGHT:"Move right",ZOOMIN:"Zoom in",ZOOMOUT:"Zoom out",TOGGLEZOOM:"Toggle zoom level",TOGGLE1TO1:"Toggle zoom level",ITERATEZOOM:"Toggle zoom level",ROTATECCW:"Rotate counterclockwise",ROTATECW:"Rotate clockwise",FLIPX:"Flip horizontally",FLIPY:"Flip vertically",FITX:"Fit horizontally",FITY:"Fit vertically",RESET:"Reset",TOGGLEFS:"Toggle fullscreen"};export{o as en};</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -0,0 +1 @@</span><br /><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">const t={PANUP:"Bīdīt uz augšu",PANDOWN:"Bīdīt uz leju",PANLEFT:"Bīdīt pa kreisi",PANRIGHT:"Bīdīt pa labi",ZOOMIN:"Pietuvināt",ZOOMOUT:"Attālināt",TOGGLEZOOM:"Pārslēgt tālummaiņas līmeni",TOGGLE1TO1:"Pārslēgt tālummaiņas līmeni",ITERATEZOOM:"Pārslēgt tālummaiņas līmeni",ROTATECCW:"Pagrieziet pretēji pulksteņrādītāja virzienam",ROTATECW:"Pagrieziet pulksteņrādītāja virzienā",FLIPX:"Apgriezt horizontāli",FLIPY:"Apgriezt vertikāli",FITX:"Ietilpināt horizontāli",FITY:"Ietilpināt vertikāli",RESET:"Atiestatīt",TOGGLEFS:"Pārslēgt pilnekrāna režīmu"};export{t as lv};</span></span></code>
                         </div>
                     </section>
                 </div>
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 27 Mar 2025, 23:32:33 (timezone Asia/Jakarta) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 28 Mar 2025, 00:22:29 (timezone Asia/Jakarta) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
