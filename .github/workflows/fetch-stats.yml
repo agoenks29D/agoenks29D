@@ -1,0 +1,50 @@
+name: Fetch GitHub Stats
+
+on:
+  schedule:
+    # Runs every hour, at minute 15 (offset from fetch-events.yml to avoid
+    # both workflows racing to commit at the same time)
+    - cron: '15 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-stats
+  cancel-in-progress: false
+
+jobs:
+  fetch-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and update stats
+        env:
+          # The default GITHUB_TOKEN works for public GraphQL data (contributions,
+          # pinned repos, languages, etc.)
+          GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          # Change this if the target username differs from the repo owner
+          GH_USERNAME: ${{ vars.USERNAME }}
+        run: node .github/scripts/fetch-stats.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add github/stats.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update github stats [skip ci]"
+            git push
+          fi

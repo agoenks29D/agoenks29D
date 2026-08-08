@@ -1,0 +1,51 @@
+name: Fetch GitHub Events
+
+on:
+  schedule:
+    # Runs every hour, at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-events
+  cancel-in-progress: false
+
+jobs:
+  fetch-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and update events
+        env:
+          # The default GITHUB_TOKEN is enough for reading public API data
+          GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          # Change this if the target username differs from the repo owner
+          GH_USERNAME: ${{ vars.USERNAME }}
+        run: node .github/scripts/fetch-events.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add github/events.json
+          if [ -d github/archive ]; then
+            git add github/archive
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update github events [skip ci]"
+            git push
+          fi
