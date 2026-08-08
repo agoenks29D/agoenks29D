@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:49:37.205Z",
+  "generatedAt": "2026-08-08T17:43:37.741Z",
   "profile": {
     "login": "agoenks29D",
     "name": "Agung Dirgantara",
@@ -17,45 +17,6 @@
     "currentStreak": 2,
     "longestStreak": 5,
     "calendar": [
-      {
-        "contributionDays": [
-          {
-            "date": "2025-08-03",
-            "contributionCount": 2,
-            "weekday": 0
-          },
-          {
-            "date": "2025-08-04",
-            "contributionCount": 0,
-            "weekday": 1
-          },
-          {
-            "date": "2025-08-05",
-            "contributionCount": 0,
-            "weekday": 2
-          },
-          {
-            "date": "2025-08-06",
-            "contributionCount": 0,
-            "weekday": 3
-          },
-          {
-            "date": "2025-08-07",
-            "contributionCount": 0,
-            "weekday": 4
-          },
-          {
-            "date": "2025-08-08",
-            "contributionCount": 3,
-            "weekday": 5
-          },
-          {
-            "date": "2025-08-09",
-            "contributionCount": 0,
-            "weekday": 6
-          }
-        ]
-      },
       {
         "contributionDays": [
           {
@@ -2081,6 +2042,15 @@
             "date": "2026-08-08",
             "contributionCount": 3,
             "weekday": 6
+          }
+        ]
+      },
+      {
+        "contributionDays": [
+          {
+            "date": "2026-08-09",
+            "contributionCount": 0,
+            "weekday": 0
           }
         ]
       }
