@@ -2,7 +2,7 @@
 
 <p align="center">
   Checkout my GitHub page:
-  <a href="https://agoenks29d.github.io">agoenks29d.github.io</a>
+  <a href="https://agoenks29d.github.io" target="_blank">agoenks29d.github.io</a>
 </p>
 
 <p align="center">
